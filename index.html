@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="Main.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <title>Computational Time comparision</title>
+</head>
+
+<body class="bg">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-auto">
+                    <div class="text-justify text-capitalize" style="color: seashell; font-weight: bold;">W I N N E R S
+                        &nbsp; T R A I N,</br> L O S E R S &nbsp; C O M P L A I N .</div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid" style="height: 10%;">
+        <div class="text-center text-capitalize"
+            style="padding-top: 5%; color:black ; font-style: oblique;font-weight: bolder; text-size-adjust: inherit;text-justify: auto;">
+            <h4>ARE <img
+                    src="http://pluspng.com/img-png/finger-pointing-at-you-png-you-index-finger-pointing-finger-hand-indicate-920.png"
+                    alt="Finger Pointing At You PNG" style="width: 40px;height: 40px;">
+                A COMPETITIVE PROGRAMMER</h4>
+            <h6 >then have a look below</h6>
+        </div>
+    </div>
+    <div style="height: 100px;">
+
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <!-- <div class="col-auto nav-pills flex-column flex-sm-row">
+                    <a class="flex-sm-fill text-sm-center nav-link active"
+                        href="https://repl.it/@eswarabisheak/DarkUnacceptableCoordinates" style="color:black;
+                    background-color:seashell;">Live Run in Repl</a>
+                </div> -->
+            </div>
+            <div class="container-lg col-lg-10 text-left"
+                style="color:black;font-stretch: narrower; font-family: 'Times New Roman', Times, serif;font-style: normal; text-size-adjust: inherit;text-justify: auto;">
+                <h3 style="font-weight: bold;"><strong>nCr Calculation</strong>:</h3>
+                <img class="img-fluid" src="images/Find NCR NPR in C++.png"
+                    style="width:700px; height: auto; padding: 10px; ">
+                <h5><a href="https://en.wikipedia.org/wiki/Iteration">Iteration:-</a></h5>
+                <p class="text-left text-justify" style="background-color: blanchedalmond;">
+                    Iteration in computing is the technique marking out of a block of statements within a computer
+                    program for a defined number of repetitions. That block of statements is said to be iterated; a
+                    computer scientist might also refer to that block of statements as an "iteration".
+                </p>
+                <div class="text-justify " style="width: 100%;background-color:black;">
+                    <pre class="text-left prettify" style="overflow-x: hidden; font-weight: 400;color:cornsilk;"><code>
+                    <i>res</i> = 1
+                    <b>for</b> <i>i</i> <b>from</b> 1 <b>to</b> n        // loop n times
+                    {
+                        <i>res</i> = <i>res</i> * i            
+                    }
+                    print <i>res</i>       // the number n!
+                </code> </pre>
+                </div>
+
+
+                <h5><a href="https://en.wikipedia.org/wiki/Recursion_(computer_science)">Recursion:-</a></h5>
+                <p class="text-left text-justify" style="background-color: blanchedalmond;">
+                    Recursion in computer science is a method of solving a problem where the solution depends on
+                    solutions to smaller instances of the same problem. Such problems can generally be solved by
+                    iteration, but this needs to identify and index the smaller instances at programming time. At the
+                    opposite, recursion solves such recursive problems by using functions that call themselves from
+                    within their own code. The approach can be applied to many types of problems, and recursion is one
+                    of the central ideas of computer science.
+                </p>
+                <div class="text-justify " style="width: 100%;background-color:black;">
+                    <pre class="text-left prettify" style="overflow-x: hidden; font-weight: 400;color:cornsilk;"><code> <b>function</b> factorial is:<br>
+                <b>input</b>: integer <i>n</i> such that <i>n</i> &gt;= 0<br>
+                <b>output</b>: [<i>n</i> × (<i>n</i>-1) × (<i>n</i>-2) × … × 1]
+                <br>
+                1. if <i>n</i> is 0, <b>return</b> 1
+                2. otherwise, <b>return</b> [ <i>n</i> × factorial(<i>n</i>-1) ]
+                <br>
+                <b>end</b> factorial</code></pre>
+                </div>
+                <a
+                    href="https://www.freecodecamp.org/news/how-recursion-works-explained-with-flowcharts-and-a-video-de61f40cb7f9/">
+                    <img src="images/Iteration vs recursion, courtesy of freecodecamp.png" class="rounded img-fluid"
+                        style="width:700px; height: auto; padding-left: 10px;" />
+                </a>
+
+                <h5 style="padding: 5%;">Different Ways of Calculating nCr value:-</h5>
+
+                <iframe height="700px" width="100%"
+                    src="https://repl.it/@eswarabisheak/DarkUnacceptableCoordinates?lite=true" scrolling="no"
+                    frameborder="yes" allowtransparency="false" allowfullscreen="true"
+                    sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+
+                <div class="text-justify " style="width: auto;background-color:black;">
+                    <pre class="text-left prettify" style="overflow-x: hidden; font-weight: 400;color:cornsilk;">
+                <code>
+                 ll NCR(ll n, ll r) {
+                   ll y, res;
+                   if (r == 0) {
+                     y = 1;
+                     return y;
+                   } else if (n == r) {
+                     y = 1;
+                     return y;
+                   } else {
+                     res = NCR(n - 1, r - 1) + NCR(n - 1, r);
+                   }
+                   return res;
+                 }</code>
+                    </pre>
+                </div>
+                <p class="text-left text-justify" style="background-color: blanchedalmond;">
+                    Hmm, here comes the very simple but tough to trace recursion logic to find factorial.
+                    The major issue with this code is overlapping subproblems. In simple terms, we compute the value
+                    repeatedly. assume we need to find the value of 10C4 which can be written as
+                    10!/(6!*4!).</br>
+                    To calculate 10! we call the function 10 times,6! six times,4! 4 times.</br>
+                    Along with that, we do waste time in function calling and returning values.
+                </p>
+                <div class="text-justify " style="width: auto;background-color:black;">
+                    <pre class="text-left prettify" style="overflow-x: hidden; font-weight: 400;color:cornsilk;">
+                <code>
+                        
+                  ll fact(ll n);
+                  //old fashion iterative loops better than recursive functions
+                  ll nCr(ll n, ll r) {
+                    return fact(n) / (fact(r) * fact(n - r));
+                  }
+                  ll fact(ll n) {
+                    ll res = 1;
+                    for (ll i = 2; i <= n; i++)
+                      res = res * i;
+                    return res;
+                  }
+                </code>
+            </pre>
+                </div>
+                <p class="text-left text-justify" style="background-color: blanchedalmond;">
+                    This is slightly better than the recursion logic but still, we do repetitive computations.
+                    and we can apply DP(Dynamic programming)to reduce them. For larger values, we might get a
+                    floating-point
+                    exception.
+                </p>
+                <div class="text-justify " style="width: auto;background-color:black;">
+                    <pre class="text-left prettify" style="overflow-x: hidden; font-weight: 400;color:cornsilk;">
+                <code> 
+                   ll ncr(ll n, ll r) {
+                     /*
+                     for your understandiing I am actually removing the 
+                     redundant calculations along with dec in the no of operations.
+                     */
+                     ll a = 1;
+                     if (r > n - r) {
+                       r = n - r;
+                     }
+                     for (ll i = 0; i < r; i++) //numerator,denominator
+                       a *= n - i, a /= i + 1;;
+                     return a;
+                   }
+                </code>
+            </pre>
+                </div>
+                <p class="text-left text-justify" style="background-color: blanchedalmond;">
+                    With slightly simplifying the regular formula for NCR or NPR by removing the redundant
+                    computations and we will not face any problems like floating-point exception or stack overflow
+                    it is one of the best methods one could easily follow.
+                </p>
+                <div class="text-justify " style="width: auto;background-color:black;">
+                    <pre class="text-left prettify" style="overflow-x: hidden; font-weight: 400;color:cornsilk;">
+                <code> 
+               void printNcR(ll n, ll r) {
+                 clock_t time_req;
+                 time_req = clock();
+               
+                 // p holds the value of n*(n-1)*(n-2)..., 
+                 // k holds the value of r*(r-1)... 
+                 ll p = 1, k = 1;
+               
+                 // C(n, r) == C(n, n-r), 
+                 // choosing the smaller value 
+                 if (n - r < r)
+                   r = n - r;
+               
+                 if (r != 0) {
+                   while (r) {
+                     p *= n;
+                     k *= r;
+               
+                     // gcd of p, k 
+                     ll m = __gcd(p, k);
+               
+                     // dividing by gcd, to simplify product 
+                     // division by their gcd saves from the overflow 
+                     p /= m;
+                     k /= m;
+               
+                     n--;
+                     r--;
+                   }
+               
+                   // k should be simplified to 1 
+                   // as C(n, r) is a natural number 
+                   // (denominator should be 1 ) . 
+                 } else
+                   p = 1;
+               
+                 // if our approach is correct p = ans and k =1 
+                 cout << p << "  ";
+                 time_req = clock() - time_req;
+                 cout << (float) time_req / CLOCKS_PER_SEC << " seconds" << endl;
+               }
+            </code>
+        </pre>
+                </div>
+                <div class="text-justify " style="width: auto;background-color:black;">
+                    <pre class="text-left prettify" style="overflow-x: hidden; font-weight: 400;color:cornsilk;">
+            <code> 
+              int main() {
+              
+                //100!=9.332622e+157
+              
+                clock_t time_req;
+                //recursion is the worst method as we face Stack-Overflow 
+                time_req = clock();
+                //100C4
+                cout << NCR(100, 4) << " recursion ";
+                time_req = clock() - time_req;
+                cout << (float) time_req / CLOCKS_PER_SEC << " seconds" << endl;
+              
+                time_req = clock();
+                //100C4
+                cout << nCr(100, 4) << " iterative ";
+                time_req = clock() - time_req;
+                cout << (float) time_req / CLOCKS_PER_SEC << " seconds" << endl;
+              
+                //100C4
+                printNcR(100, 4);
+              
+                time_req = clock();
+                //100C4
+                cout << ncr(100, 4) << "  ";
+                time_req = clock() - time_req;
+                cout << (float) time_req / CLOCKS_PER_SEC << " seconds" << endl;
+              
+                return 0;
+              }
+                        
+                </code>
+            </pre>
+                </div>
+                <div class="container" style="background-color: blanchedalmond;">
+                    <h4>Conclusion:-</h4>
+                    <p class="text-left text-justify">
+                        There are a few problems that could be solved only through recursion but that doesn't mean
+                        solving
+                        every problem using recursion. One should crack the logic through iteration and recursion. So
+                        from
+                        the above code snippets, you could analyze the time taken to compute 100C4 through different
+                        methods. The worst one is through recursion which took 5 sec to compute, with the elimination of
+                        repetitive operations we could reduce a lot of time.</br>
+                        It’s not a difficult skill to learn, it just takes practice.</br>
+                        Happy Coding.
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm">
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
