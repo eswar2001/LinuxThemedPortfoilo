@@ -2,20 +2,15 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
     <title>Quantum Computing</title>
 </head>
 <style>
     /* The navigation bar */
     .navbar {
-
         overflow: hidden;
         position: fixed;
         /* Set the navbar to fixed position */
@@ -56,30 +51,24 @@
 
 <body>
     <nav id="#navbar-example2" class="navbar navbar-dark bg-primary">
-
         <ul class="nav nav-pills">
-            <li class="nav-item">
-                <a class="nav-link" href="#Overview">Overview</a></li>
-            <li class="nav-item">
-                <a class="nav-link" href="#what?">what?</a></li>
-            <li class="nav-item">
-                <a class="nav-link" href="#How?">How?</a></li>
-            <li class="nav-item">
-                <a class="nav-link" href="#Conclusion">Conclusion</a></li>
-
+            <li class="nav-item"><a class="nav-link" href="#Overview">Overview</a></li>
+            <li class="nav-item"><a class="nav-link" href="#what?">what?</a></li>
+            <li class="nav-item"><a class="nav-link" href="#How?">How?</a></li>
+            <li class="nav-item"><a class="nav-link" href="#conclusion">Conclusion</a></li>
         </ul>
     </nav>
+    <div style="height: 100px;"></div>
     <div style="padding:5%;">
         <h3>Quantum Computing</h3>
     </div>
     <div data-spy="scroll" data-target="#navbar-example" data-offset="0">
-        <div class="container-fluid">
-            <div class="row justify-content-md-center">
-                <div class="col"></div>
-                <div class="col-6">
-                    <img src="https://cdn.technologyreview.com/i/images/062118rigetti0584finalsquare.jpg?sw=959&cx=151&cy=0&cw=1683&ch=1998"
-                        style="width: 700px; height: 500px;">
-
+        <div class="container">
+            <div class="row">
+                <div class="col-sm"></div>
+                <div class="col"><img
+                        src="https://cdn.technologyreview.com/i/images/062118rigetti0584finalsquare.jpg?sw=959&cx=151&cy=0&cw=1683&ch=1998"
+                        style="width:inherit; height: auto;">
                     <h4 id="Overview">Overview:-</h4>
                     <p> It's been awhile since the conjugate coding was invented by <strong>Stephen Wiesner</strong>
                         (1960), later on, Alexander Holevo publishes a paper showing that n qubits can carry more than n
@@ -92,71 +81,47 @@
                         "Tangle Lake".This is followed by the company IonQ which introduced the first commercial trapped
                         ion quantum computer, with a program length of over 60 two-qubit gates.
                     </p>
-                </div>
-                <div class="col"></div>
-            </div>
-            <div class="row justify-content-md-center">
-                <div class="col"></div>
-                <div class="col-6">
                     <h4 id="what?">So what exactly is a quantum computer ?</h4>
                     <p> A quantum computer is a machine that uses quantum mechanics to perform calculations.</p>
-                </div>
-                <div class="col"></div>
-            </div>
-            <div class="row justify-content-md-center">
-                <div class="col"></div>
-                <div class="col-6">
                     <h4 id="How?">How is this different from other computers?
                     </h4>
-
                     <p>
                         Our computers are based on digital electronics and operate using bits and logic gates. A quantum
                         computer, conversely, uses quantum mechanics to perform computation. Rather than bits and logic
-                        gates, quantum computers use qubits and quantum gates.</p>
-                    <div class="media">
-                        <img class="mr-3"
-                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRRhhsTPSDsfiM-gl87kTjR-_fwH7I7UhJwR7HVMZM4LG-9qHu5&usqp=CAU">
-                        <div class="media-body">
-                            <p> Hmm doesn't it sound amazing.Let’s start with <strong>what</strong> a qubit is. A qubit
-                                is a
-                                vector of two
-                                complex numbers with unit length.For starters, a bit is either a 0 or 1. There are no
-                                probabilities here, it’s either known to be a 0 or it’s known to be a 1. A qubit,
-                                conversely, is
-                                inherently probabilistic, meaning that two <strong>identical</strong> qubits may have
-                                <strong>different </strong>values once
-                                measured.</p>
-                        </div>
-                    </div>
-
-
+                        gates, quantum computers use qubits and quantum gates.
+                    </p><img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRRhhsTPSDsfiM-gl87kTjR-_fwH7I7UhJwR7HVMZM4LG-9qHu5&usqp=CAU">
+                    <p> Hmm doesn't it sound amazing.Let’s start with <strong>what</strong> a qubit is. A qubit
+                        is a
+                        vector of two
+                        complex numbers with unit length.For starters, a bit is either a 0 or 1. There are no
+                        probabilities here, it’s either known to be a 0 or it’s known to be a 1. A qubit,
+                        conversely, is
+                        inherently probabilistic, meaning that two <strong>identical</strong> qubits may have
+                        <strong>different </strong>values once
+                        measured.
+                    </p>
                     <h5> Qubit Control </h5>
-
                     <p> Computer scientists control the microscopic particles that act as qubits in quantum computers by
                         using<strong> control devices</strong>.
-
-                        <li> <strong>Ion traps </strong>use optical or magnetic fields (or a combination of both) to
-                            trap ions.</li>
+                        <li><strong>Ion traps </strong>use optical or magnetic fields (or a combination of both) to
+                            trap ions.
+                        </li>
                         <li><strong>Optical traps</strong> use light waves to trap and control particles.</li>
-                        <li> <strong>Quantum dots</strong> are made of semiconductor material and are used to contain
+                        <li><strong>Quantum dots</strong> are made of semiconductor material and are used to contain
                             and
                             manipulate
-                            electrons.</li>
-                        <li> <strong>Semiconductor impurities</strong> contain electrons by using "unwanted" atoms found
+                            electrons.
+                        </li>
+                        <li><strong>Semiconductor impurities</strong> contain electrons by using "unwanted" atoms found
                             in semiconductor
-                            material.</li>
-                        <li> <strong>Superconducting circuits </strong>allow electrons to flow with almost no resistance
+                            material.
+                        </li>
+                        <li><strong>Superconducting circuits </strong>allow electrons to flow with almost no resistance
                             at very low
-                            temperatures.</li>
+                            temperatures.
+                        </li>
                     </p>
-                </div>
-                <div class="col"></div>
-            </div>
-
-
-            <div class="row justify-content-md-center">
-                <div class="col"></div>
-                <div class="col-6">
                     <h4 id="conclusion">Conclusion</h4>
                     <p>Quantum computers could one day replace silicon chips, just like the transistor once replaced the
                         vacuum tube. But for now, the technology required to develop such a quantum computer is beyond
@@ -166,27 +131,18 @@
                         the power of quantum computing in finding solutions for problems in domains like Encryption and
                         Cybersecurity,Classical Computing Problems,drug and research development ,financial
                         services,supply
-                        chain logistics.</p>
-                </div>
-                <div class="col"></div>
-            </div>
-            <div class="row justify-content-md-center">
-                <div class="col"></div>
-                <div class="col-6">
-                    <h4 id="more">Want to know more ?</h4>
-                    <iframe data-autoresize="false" class="wakeletEmbed" width="100%" height="2000px"
+                        chain logistics.
+                    </p>
+                    <h4 id="more">Want to know more ?</h4><iframe data-autoresize="false" class="wakeletEmbed"
+                        width="100%" height="2000px"
                         src="https://embed.wakelet.com/wakes/0fa4a815-51e3-40b9-aba0-60f562081329/list?hide-cover=1&hide-description=1&hide-title=1"
                         style="border: none" allow="autoplay"></iframe>
-                    <!-- Please only call https://embed-assets.wakelet.com/wakelet-embed.js once per page -->
                     <script src="https://embed-assets.wakelet.com/wakelet-embed.js" charset="UTF-8"></script>
                 </div>
-                <div class="col"></div>
+                <div class="col-sm"></div>
             </div>
         </div>
     </div>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
     </script>
