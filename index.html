@@ -42,7 +42,18 @@
                 });
                 project += '</div>';
                 $('#projects').append(project);
-
+                education = '';
+                $.each(data["Education"], function (key, value) {
+                    education += '<div class="row"><div class="col-md-4"><h4>' + value
+                        .institute + '</h4> <p>' + value.Timeline + '</p></div>';
+                    education += '<div class="col-md-8">' + '<p> <strong>' + value.Course +
+                        '</strong> <span class="hidden-phone">' + value.experience;
+                    education +=
+                        '</br> </span> <span> <span> <img src="https://images.vexels.com/media/users/3/131261/isolated/preview/b2e48580147ca0ed3f970f30bf8bb009-map-location-marker-by-vexels.png" alt="Location" style="width: 15px;"> City of Destiny </span> </span></p>'
+                    education += '</div></div> </br>';
+                });
+                $('#education').append(education);
+                console.log(education);
             });
             $("a").bind('click', function () {
                 window.location.href = $(this).attr('href');
@@ -92,73 +103,10 @@
     </div>
 
 
-    <div class="container-sm">
+    <div class="container-sm" id="education">
         <div class="profile-txt" style="padding: 5%;">
             <h2><strong>Education</strong></h2>
             <hr>
-        </div>
-        <div class="row">
-            <div class="col-md-4">
-                <h4>Vignan's Institute of Information </br> Technology (VIIT)</h4>
-                <p> june 2018 - present</p>
-            </div>
-            <div class="col-md-8">
-                <p> <strong>BTech - Computer Science and Engineering </strong> <span class="hidden-phone"> College life
-                        experience is truly one of a kind. The most common memories people have of college life are
-                        definitely goofing around with friends. They remember how the group of friends walked around the
-                        college in style and playing silly pranks on each other</br> </span> <span> <span> <img
-                                src="https://images.vexels.com/media/users/3/131261/isolated/preview/b2e48580147ca0ed3f970f30bf8bb009-map-location-marker-by-vexels.png"
-                                alt="Location" style="width: 15px;"> City of Destiny </span> </span></p>
-            </div>
-        </div> </br>
-        <div class=" row">
-            <div class="col-md-4">
-                <h4>Sri Chaitanya Junior College</h4>
-                <p> May 2016 - May 2018</p>
-            </div>
-            <div class="col-md-8">
-                <p> <strong>Intermediate (Group:MPC)</strong> <span class="hidden-phone"> The education was mainly over
-                        IIT-Jee syllabus.I tried my best to secure an Nit but I failed.I secured a 13k rank in
-                        AP-Eamcet.Time passed too fast still I feel i just completed my highschool </br></span> <span>
-                        <span> <img
-                                src="https://images.vexels.com/media/users/3/131261/isolated/preview/b2e48580147ca0ed3f970f30bf8bb009-map-location-marker-by-vexels.png"
-                                alt="Location" style="width: 15px;"> City of Destiny </span> </span></p>
-            </div>
-        </div> </br>
-        <div class=" row">
-            <div class="col-md-4">
-                <h4>Mp & Ev English Medium School</h4>
-                <p> May 2013 - May 2016</p>
-            </div>
-            <div class="col-md-8">
-                <p> <strong>Highschool - CBSE (8th , 9th and 10th)</strong> <span class="hidden-phone"> I graduated
-                        highschool, where I enjoyed doing science, math and arts. I realized that I had passion for
-                        Technology . Then I started to spend time learning stuff about it. </br></span> <span> <span>
-                            <img src="https://images.vexels.com/media/users/3/131261/isolated/preview/b2e48580147ca0ed3f970f30bf8bb009-map-location-marker-by-vexels.png"
-                                alt="Location" style="width: 15px;"> City of Destiny</span> </span></p>
-            </div>
-        </div> </br>
-        <div class=" row">
-            <div class="col-md-4">
-                <h4>Delhi Public School</h4>
-                <p> May 2011 - May 2013</p>
-            </div>
-            <div class="col-md-8">
-                <p> <strong>Midschool - CBSE (6th and 7th) </br></strong> <span> <img
-                            src="https://images.vexels.com/media/users/3/131261/isolated/preview/b2e48580147ca0ed3f970f30bf8bb009-map-location-marker-by-vexels.png"
-                            alt="Location" style="width: 15px;"> City of Destiny</span> </span></p>
-            </div>
-        </div> </br>
-        <div class=" row">
-            <div class="col-md-4">
-                <h4>St.Britto's Academy</h4>
-                <p> May 2008 - May 2011</p>
-            </div>
-            <div class="col-md-8">
-                <p> <strong>school - CBSE (3rd ,4th and 5th) </br></strong> <span> <img
-                            src="https://images.vexels.com/media/users/3/131261/isolated/preview/b2e48580147ca0ed3f970f30bf8bb009-map-location-marker-by-vexels.png"
-                            alt="Location" style="width: 15px;"> Chennai,Tamil Nadu</span> </span></p>
-            </div>
         </div>
     </div>
     <div class="projects">
@@ -169,169 +117,170 @@
         </div>
         <div class="container" id="projects">
         </div>
-        <div class="Blog">
-            <div class="container" style="height: 100%; color: blanchedalmond;">
-                <div class="row">
-                    <div class="col"></div>
-                    <div class="col" style="text-align: center;">
-                        <h2><strong>I can help.</strong></h2></br>
-                        <h3>I’m currently available for freelance work.</h3></br>
-                        <p>If you have a project that you want to get started, think you need my help with something or
-                            just fancy saying hey, then get in touch.</p>
-                        <p><a href="mailto:teswar2001@yahoo.co.in" class="button email-lnk"
-                                style="color: cornsilk;">message me <i class="email"></i></a></p>
-                    </div>
-                    <div class="col"></div>
+    </div>
+    <div class="Blog">
+        <div class="container" style="height: 100%; color: blanchedalmond;">
+            <div class="row">
+                <div class="col"></div>
+                <div class="col" style="text-align: center;">
+                    <h2><strong>I can help.</strong></h2></br>
+                    <h3>I’m currently available for freelance work.</h3></br>
+                    <p>If you have a project that you want to get started, think you need my help with something or
+                        just fancy saying hey, then get in touch.</p>
+                    <p><a href="mailto:teswar2001@yahoo.co.in" class="button email-lnk" style="color: cornsilk;">message
+                            me <i class="email"></i></a></p>
                 </div>
+                <div class="col"></div>
             </div>
         </div>
-        <div class="contact">
-            <div class="projects-text" style="padding: 5%;">
-                <h1 style="padding: 1%;">Stay in touch</h1>
-                <hr>
-                <ul class="contact-list">
-                    <li class="list-item"><i class="fa fa-map-marker fa-2x"><span
-                                class="contact-text place">Vizag,India</span></i></li>
-                    <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a
-                                    href="tel:1-212-555-5555" title="Give me a call">+91 8328594889</a></span></i></li>
-                    <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a
-                                    href="mailto:#" title="Send me an email">teswar2001@yahoo.co.in</a></span></i></li>
-                </ul>
-                <hr>
-                <ul class="social-media-list">
-                    <li><a href="https://github.com/eswar2001" target="_blank" class="contact-icon"> <i
-                                class="fa fa-github" aria-hidden="true"></i></a></li>
-                    <li><a href="https://in.linkedin.com/in/eswar-abisheak-14916017b" target="_blank"
-                            class="contact-icon"> <i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                    <li><a href="https://www.instagram.com/eswar__abisheak/" target="_blank" class="contact-icon"> <i
-                                class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                    <li><a href="https://www.facebook.com/eswar.abisheak/" target="_blank" class="contact-icon"> <i
-                                class="fa fa-facebook" aria-hidden="true"></i></a></li> <img
-                        src="https://www.hackthebox.eu/badge/image/185912" alt="Hack The Box" ;>
-                </ul>
-                <hr>
-                <div class="container" style="padding-top: 1%;">
-                    <p style=" color: whitesmoke; font-weight: bold; font-style: italic;"> “Alone, we can do so little;
-                        together we can do so much.”</p> <span>- Helen Keller</span>
-                </div>
+    </div>
+    <div class="contact">
+        <div class="projects-text" style="padding: 5%;">
+            <h1 style="padding: 1%;">Stay in touch</h1>
+            <hr>
+            <ul class="contact-list">
+                <li class="list-item"><i class="fa fa-map-marker fa-2x"><span
+                            class="contact-text place">Vizag,India</span></i></li>
+                <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a
+                                href="tel:1-212-555-5555" title="Give me a call">+91 8328594889</a></span></i></li>
+                <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a
+                                href="mailto:#" title="Send me an email">teswar2001@yahoo.co.in</a></span></i></li>
+            </ul>
+            <hr>
+            <ul class="social-media-list">
+                <li><a href="https://github.com/eswar2001" target="_blank" class="contact-icon"> <i class="fa fa-github"
+                            aria-hidden="true"></i></a></li>
+                <li><a href="https://in.linkedin.com/in/eswar-abisheak-14916017b" target="_blank" class="contact-icon">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.instagram.com/eswar__abisheak/" target="_blank" class="contact-icon"> <i
+                            class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.facebook.com/eswar.abisheak/" target="_blank" class="contact-icon"> <i
+                            class="fa fa-facebook" aria-hidden="true"></i></a></li> <img
+                    src="https://www.hackthebox.eu/badge/image/185912" alt="Hack The Box" ;>
+            </ul>
+            <hr>
+            <div class="container" style="padding-top: 1%;">
+                <p style=" color: whitesmoke; font-weight: bold; font-style: italic;"> “Alone, we can do so little;
+                    together we can do so much.”</p> <span>- Helen Keller</span>
             </div>
         </div>
-        <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    </div>
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
             integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
         </script> -->
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-        </script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-        </script>
-        <script>
-            ! function (a) {
-                var b = "object" == typeof self && self.self === self && self || "object" == typeof global && global
-                    .global === global && global;
-                "function" == typeof define && define.amd ? define(["exports"], function (c) {
-                        b.ParticleNetwork = a(b, c)
-                    }) : "object" == typeof module && module.exports ? module.exports = a(b, {}) : b.ParticleNetwork =
-                    a(b, {})
-            }(function (a, b) {
-                var c = function (a) {
-                    this.canvas = a.canvas, this.g = a.g, this.particleColor = a.options.particleColor, this.x =
-                        Math.random() * this.canvas.width, this.y = Math.random() * this.canvas.height, this
-                        .velocity = {
-                            x: (Math.random() - .5) * a.options.velocity,
-                            y: (Math.random() - .5) * a.options.velocity
-                        }
-                };
-                return c.prototype.update = function () {
-                    (this.x > this.canvas.width + 20 || this.x < -20) && (this.velocity.x = -this.velocity.x), (
-                        this.y > this.canvas.height + 20 || this.y < -20) && (this.velocity.y = -this.velocity
-                        .y), this.x += this.velocity.x, this.y += this.velocity.y
-                }, c.prototype.h = function () {
-                    this.g.beginPath(), this.g.fillStyle = this.particleColor, this.g.globalAlpha = .7, this.g
-                        .arc(this.x, this.y, 1.5, 0, 2 * Math.PI), this.g.fill()
-                }, b = function (a, b) {
-                    this.i = a, this.i.size = {
-                        width: this.i.offsetWidth,
-                        height: this.i.offsetHeight
-                    }, b = void 0 !== b ? b : {}, this.options = {
-                        particleColor: void 0 !== b.particleColor ? b.particleColor : "#fff",
-                        interactive: void 0 !== b.interactive ? b.interactive : !0,
-                        velocity: this.setVelocity(b.speed),
-                        density: this.j(b.density)
-                    }, this.init()
-                }, b.prototype.init = function () {
-                    if (!/(^#[0-9A-F]{6}$)|(^#[0-9A-F]{3}$)/i.test(this.options.particleColor)) return console
-                        .error("Please specify a valid particleColor hexadecimal color"), !1;
-                    this.canvas = document.createElement("canvas"), this.i.appendChild(this.canvas), this.g =
-                        this.canvas.getContext("2d"), this.canvas.width = this.i.size.width, this.canvas
-                        .height = this.i.size.height, this.l(this.i, {
-                            position: "relative"
-                        }), this.l(this.canvas, {
-                            "z-index": "20",
-                            position: "relative"
-                        }), window.addEventListener("resize", function () {
-                            return this.i.offsetWidth === this.i.size.width && this.i.offsetHeight === this
-                                .i.size.height ? !1 : (this.canvas.width = this.i.size.width = this.i
-                                    .offsetWidth, this.canvas.height = this.i.size.height = this.i
-                                    .offsetHeight, clearTimeout(this.m), void(this.m = setTimeout(
-                                        function () {
-                                            this.o = [];
-                                            for (var a = 0; a < this.canvas.width * this.canvas.height /
-                                                this.options.density; a++) this.o.push(new c(this));
-                                            this.options.interactive && this.o.push(this.p),
-                                                requestAnimationFrame(this.update.bind(this))
-                                        }.bind(this), 500)))
-                        }.bind(this)), this.o = [];
-                    for (var a = 0; a < this.canvas.width * this.canvas.height / this.options.density; a++) this
-                        .o.push(new c(this));
-                    this.options.interactive && (this.p = new c(this), this.p.velocity = {
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <script>
+        ! function (a) {
+            var b = "object" == typeof self && self.self === self && self || "object" == typeof global && global
+                .global === global && global;
+            "function" == typeof define && define.amd ? define(["exports"], function (c) {
+                    b.ParticleNetwork = a(b, c)
+                }) : "object" == typeof module && module.exports ? module.exports = a(b, {}) : b.ParticleNetwork =
+                a(b, {})
+        }(function (a, b) {
+            var c = function (a) {
+                this.canvas = a.canvas, this.g = a.g, this.particleColor = a.options.particleColor, this.x =
+                    Math.random() * this.canvas.width, this.y = Math.random() * this.canvas.height, this
+                    .velocity = {
+                        x: (Math.random() - .5) * a.options.velocity,
+                        y: (Math.random() - .5) * a.options.velocity
+                    }
+            };
+            return c.prototype.update = function () {
+                (this.x > this.canvas.width + 20 || this.x < -20) && (this.velocity.x = -this.velocity.x), (
+                    this.y > this.canvas.height + 20 || this.y < -20) && (this.velocity.y = -this.velocity
+                    .y), this.x += this.velocity.x, this.y += this.velocity.y
+            }, c.prototype.h = function () {
+                this.g.beginPath(), this.g.fillStyle = this.particleColor, this.g.globalAlpha = .7, this.g
+                    .arc(this.x, this.y, 1.5, 0, 2 * Math.PI), this.g.fill()
+            }, b = function (a, b) {
+                this.i = a, this.i.size = {
+                    width: this.i.offsetWidth,
+                    height: this.i.offsetHeight
+                }, b = void 0 !== b ? b : {}, this.options = {
+                    particleColor: void 0 !== b.particleColor ? b.particleColor : "#fff",
+                    interactive: void 0 !== b.interactive ? b.interactive : !0,
+                    velocity: this.setVelocity(b.speed),
+                    density: this.j(b.density)
+                }, this.init()
+            }, b.prototype.init = function () {
+                if (!/(^#[0-9A-F]{6}$)|(^#[0-9A-F]{3}$)/i.test(this.options.particleColor)) return console
+                    .error("Please specify a valid particleColor hexadecimal color"), !1;
+                this.canvas = document.createElement("canvas"), this.i.appendChild(this.canvas), this.g =
+                    this.canvas.getContext("2d"), this.canvas.width = this.i.size.width, this.canvas
+                    .height = this.i.size.height, this.l(this.i, {
+                        position: "relative"
+                    }), this.l(this.canvas, {
+                        "z-index": "20",
+                        position: "relative"
+                    }), window.addEventListener("resize", function () {
+                        return this.i.offsetWidth === this.i.size.width && this.i.offsetHeight === this
+                            .i.size.height ? !1 : (this.canvas.width = this.i.size.width = this.i
+                                .offsetWidth, this.canvas.height = this.i.size.height = this.i
+                                .offsetHeight, clearTimeout(this.m), void(this.m = setTimeout(
+                                    function () {
+                                        this.o = [];
+                                        for (var a = 0; a < this.canvas.width * this.canvas.height /
+                                            this.options.density; a++) this.o.push(new c(this));
+                                        this.options.interactive && this.o.push(this.p),
+                                            requestAnimationFrame(this.update.bind(this))
+                                    }.bind(this), 500)))
+                    }.bind(this)), this.o = [];
+                for (var a = 0; a < this.canvas.width * this.canvas.height / this.options.density; a++) this
+                    .o.push(new c(this));
+                this.options.interactive && (this.p = new c(this), this.p.velocity = {
+                    x: 0,
+                    y: 0
+                }, this.o.push(this.p), this.canvas.addEventListener("mousemove", function (a) {
+                    this.p.x = a.clientX - this.canvas.offsetLeft, this.p.y = a.clientY - this
+                        .canvas.offsetTop
+                }.bind(this)), this.canvas.addEventListener("mouseup", function (a) {
+                    this.p.velocity = {
+                        x: (Math.random() - .5) * this.options.velocity,
+                        y: (Math.random() - .5) * this.options.velocity
+                    }, this.p = new c(this), this.p.velocity = {
                         x: 0,
                         y: 0
-                    }, this.o.push(this.p), this.canvas.addEventListener("mousemove", function (a) {
-                        this.p.x = a.clientX - this.canvas.offsetLeft, this.p.y = a.clientY - this
-                            .canvas.offsetTop
-                    }.bind(this)), this.canvas.addEventListener("mouseup", function (a) {
-                        this.p.velocity = {
-                            x: (Math.random() - .5) * this.options.velocity,
-                            y: (Math.random() - .5) * this.options.velocity
-                        }, this.p = new c(this), this.p.velocity = {
-                            x: 0,
-                            y: 0
-                        }, this.o.push(this.p)
-                    }.bind(this))), requestAnimationFrame(this.update.bind(this))
-                }, b.prototype.update = function () {
-                    this.g.clearRect(0, 0, this.canvas.width, this.canvas.height), this.g.globalAlpha = 1;
-                    for (var a = 0; a < this.o.length; a++) {
-                        this.o[a].update(), this.o[a].h();
-                        for (var b = this.o.length - 1; b > a; b--) {
-                            var c = Math.sqrt(Math.pow(this.o[a].x - this.o[b].x, 2) + Math.pow(this.o[a].y -
-                                this.o[b].y, 2));
-                            c > 120 || (this.g.beginPath(), this.g.strokeStyle = this.options.particleColor,
-                                this.g.globalAlpha = (120 - c) / 120, this.g.lineWidth = .7, this.g.moveTo(
-                                    this.o[a].x, this.o[a].y), this.g.lineTo(this.o[b].x, this.o[b].y), this
-                                .g.stroke())
-                        }
+                    }, this.o.push(this.p)
+                }.bind(this))), requestAnimationFrame(this.update.bind(this))
+            }, b.prototype.update = function () {
+                this.g.clearRect(0, 0, this.canvas.width, this.canvas.height), this.g.globalAlpha = 1;
+                for (var a = 0; a < this.o.length; a++) {
+                    this.o[a].update(), this.o[a].h();
+                    for (var b = this.o.length - 1; b > a; b--) {
+                        var c = Math.sqrt(Math.pow(this.o[a].x - this.o[b].x, 2) + Math.pow(this.o[a].y -
+                            this.o[b].y, 2));
+                        c > 120 || (this.g.beginPath(), this.g.strokeStyle = this.options.particleColor,
+                            this.g.globalAlpha = (120 - c) / 120, this.g.lineWidth = .7, this.g.moveTo(
+                                this.o[a].x, this.o[a].y), this.g.lineTo(this.o[b].x, this.o[b].y), this
+                            .g.stroke())
                     }
-                    0 !== this.options.velocity && requestAnimationFrame(this.update.bind(this))
-                }, b.prototype.setVelocity = function (a) {
-                    return "fast" === a ? 1 : "slow" === a ? .33 : "none" === a ? 0 : .66
-                }, b.prototype.j = function (a) {
-                    return "high" === a ? 5e3 : "low" === a ? 2e4 : isNaN(parseInt(a, 10)) ? 1e4 : a
-                }, b.prototype.l = function (a, b) {
-                    for (var c in b) a.style[c] = b[c]
-                }, b
-            });
-            var canvasDiv = document.getElementById('particle-canvas');
-            var options = {
-                background: '#000',
-                interactive: true,
-                speed: 'high',
-                density: 'high'
-            };
-            var particleCanvas = new ParticleNetwork(canvasDiv, options);
-        </script>
+                }
+                0 !== this.options.velocity && requestAnimationFrame(this.update.bind(this))
+            }, b.prototype.setVelocity = function (a) {
+                return "fast" === a ? 1 : "slow" === a ? .33 : "none" === a ? 0 : .66
+            }, b.prototype.j = function (a) {
+                return "high" === a ? 5e3 : "low" === a ? 2e4 : isNaN(parseInt(a, 10)) ? 1e4 : a
+            }, b.prototype.l = function (a, b) {
+                for (var c in b) a.style[c] = b[c]
+            }, b
+        });
+        var canvasDiv = document.getElementById('particle-canvas');
+        var options = {
+            background: '#000',
+            interactive: true,
+            speed: 'high',
+            density: 'high'
+        };
+        var particleCanvas = new ParticleNetwork(canvasDiv, options);
+    </script>
 
-        <script src="./main.js"></script>
+    <script src="./main.js"></script>
 </body>
 
 </html>
