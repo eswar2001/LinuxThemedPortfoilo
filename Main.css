@@ -1,12 +1,14 @@
-.bg{
+.bg {
     background-color: cornsilk;
     background: cornsilk;
 }
+
 .vl {
     padding-left: 10%;
     border-left: 2px solid dodgerblue;
     height: max-content;
 }
+
 p {
- font-family: 'Times New Roman', Times, serif;    
+    font-family: 'Times New Roman', Times, serif;
 }
