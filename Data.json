@@ -32,11 +32,16 @@
 
     }],
     "projects": [{
+        "image": "NULL",
+        "url": "https://bit.ly/eswar_dev",
+        "title": "Profile Website",
+        "text": "About me"
+    }, {
         "image": "./images/cseaiscrlin.JPG",
         "url": "https://cse.aiscrl.in",
         "title": "Department Website",
         "text": "I worked as team member.It was a wondeful experience working with my team."
-    },{
+    }, {
         "image": "https://raw.githubusercontent.com/eswar2001/ProjectCovid/master/Capture.JPG",
         "url": "https://eswar2001.github.io/ProjectCovid/",
         "title": "ProjectCovid",
