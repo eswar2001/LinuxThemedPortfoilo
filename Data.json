@@ -36,6 +36,11 @@
         "url": "https://cse.aiscrl.in",
         "title": "Department Website",
         "text": "I worked as team member.It was a wondeful experience working with my team."
+    },{
+        "image": "https://raw.githubusercontent.com/eswar2001/ProjectCovid/master/Capture.JPG",
+        "url": "https://eswar2001.github.io/ProjectCovid/",
+        "title": "ProjectCovid",
+        "text": "I built it using the webgl libraries provided by google chrome developers"
     }, {
         "image": "./images/cptime.JPG",
         "url": "./pages/ctc.html",
