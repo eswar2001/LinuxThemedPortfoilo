@@ -52,9 +52,9 @@
         "title": "computational time",
         "text": "Demonstration of time taken to compute nCr in different ways."
     }, {
-        "image": "NULL",
+        "image": "https://flutter.dev/images/flutter-logo-sharing.png",
         "url": "./resources/app-release.apk",
-        "text": "An android app built using flutter that connets to our collage CIS .Students can login to view their attendance and stuff like that.",
+        "text": "An android app built in flutter that connets to our collage database",
         "title": "CIS APP"
     }, {
         "image": "NULL",
@@ -62,22 +62,22 @@
         "text": "A jist about quantum computing.",
         "title": "All about quantum"
     }, {
-        "url": "https://eswar2001.github.io/covid-cnt/#covid",
-        "image": "NULL",
+        "url": "https://eswar2001.github.io/covid-cnt",
+        "image": "https://images.unsplash.com/photo-1584118624012-df056829fbd0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80L",
         "title": "State wise Covid-19",
         "text": " Live count on covid-19 cases in India."
     }, {
         "url": "https://eswar2001.github.io/eswar.dev/pages/Know_more.html",
-        "image": "NULL",
+        "image": "https://image.shutterstock.com/image-vector/programming-banner-coding-best-languages-600w-1033853617.jpg",
         "title": "Want to code?",
         "text": "All about Ide and code editing"
     }, {
-        "url": "https://eswar2001.github.io/covid-cnt/#covid-daily",
-        "image": "NULL",
-        "text": " Live count on covid-19 cases in India.",
-        "title": "Day wise Covid-19"
+        "url": "https://github.com/eswar2001/Segregate_your_files-",
+        "image": "https://banner2.cleanpng.com/20180905/fxs/kisspng-bash-shell-script-scripting-language-command-line-guaje-juaruipav-5b9092f6d69ad7.119365531536201462879.jpg",
+        "text": "Works only with files in that folder and does not tamper subfolders",
+        "title": "Segregate your files in a folder"
     }, {
-        "image": "NULL",
+        "image": "images/whatsapp.jpg",
         "url": "https://github.com/eswar2001/Mass-whatsapp-msg-sender",
         "title": "Mass-whatsapp-msg-sender",
         "text": "Want to send messages without saving phno and to multiple people"
