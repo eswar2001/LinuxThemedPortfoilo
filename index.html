@@ -48,6 +48,19 @@
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <style>
     </style>
+    <audio autoplay hidden id="music">
+        <source src="_Melodic Dubstep_ Dotyo - Lion Heart ( 160kbps ).mp3" type="audio/mpeg">
+    </audio>
+    <script>
+        var aud = document.getElementById("music");
+        aud.onloadstart = function () {
+            console.log("Starting to load audio");
+        };
+        aud.preload = "auto";
+        aud.loop = true;
+        aud.autoplay = true;
+        aud.load();
+    </script>
     <script>
         $(document).ready(function () {
 
@@ -222,16 +235,7 @@
             </div>
         </div>
     </div>
-    <audio autoplay hidden id="music">
-        <source src="_Melodic Dubstep_ Dotyo - Lion Heart ( 160kbps ).mp3" type="audio/mpeg">
-    </audio>
-    <script>
-        var aud = document.getElementById("music");
-        aud.preload = "auto";
-        aud.loop = true;
-        aud.autoplay = true;
-        aud.load();
-    </script>
+
     <!-- <embed loop="true" autostart="true" width="1" height="1" scrolling="no" frameborder="no" allow="autoplay"
         style="z-index: 0;" src="_Melodic Dubstep_ Dotyo - Lion Heart ( 160kbps ).mp3"> -->
     <!-- <embed src="https://soundcloud.com/eswar-abisheak/melodic-dubstep-dotyo-lion-heart" loop="true" autostart="true"
