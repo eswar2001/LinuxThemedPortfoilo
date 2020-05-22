@@ -41,7 +41,7 @@
     </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <link rel="stylesheet" href="./home.scss">
     <link rel="stylesheet" href="./Home.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -64,16 +64,16 @@
     <script>
         $(document).ready(function () {
 
-            $(document).keydown(function (event) {
-                if (event.keyCode == 123) {
-                    return false;
-                } else if ((event.ctrlKey && event.shiftKey && event.keyCode == 73) || (event.ctrlKey &&
-                        event
-                        .shiftKey && event.keyCode == 74)) {
-                    return false;
-                }
-            });
-            console.log("ready!");
+            // $(document).keydown(function (event) {
+            //     if (event.keyCode == 123) {
+            //         return false;
+            //     } else if ((event.ctrlKey && event.shiftKey && event.keyCode == 73) || (event.ctrlKey &&
+            //             event
+            //             .shiftKey && event.keyCode == 74)) {
+            //         return false;
+            //     }
+            // });
+            // console.log("ready!");
             $.getJSON(
                 "Data.json",
                 function (
@@ -129,7 +129,7 @@
     <title>Eswar Abisheak</title>
 </head>
 
-<body style="font-family: 'Courier New', Courier, monospace;" oncontextmenu="return false;">
+<body style="font-family: 'Courier New', Courier, monospace;">
 
     <div id="particle-canvas">
         <div class="hero-text t" style="z-index: 9999;">
@@ -217,8 +217,56 @@
                                 href="mailto:#" title="Send me an email">teswar2001@yahoo.co.in</a></span></i></li>
             </ul>
             <hr>
-            <ul class="social-media-list">
-                <li><a href="https://github.com/eswar2001" target="_blank" class="contact-icon"> <i class="fa fa-github"
+            <div class="cont social-buttons">
+                <!-- facebook  Button -->
+                <a href="https://www.facebook.com/eswar.abisheak/" target="blank" class="social-margin">
+                    <div class="social-icon facebook">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </div>
+                </a>
+                <!-- pinterest Button -->
+                <!-- <a href="https://pinterest.com/" target="blank" class="social-margin">
+                    <div class="social-icon pinterest">
+                        <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                    </div>
+                </a> -->
+                <!-- LinkedIn Button -->
+                <a href="https://in.linkedin.com/in/eswar-abisheak-14916017b" class="social-margin" target="blank">
+                    <div class="social-icon linkedin">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </div>
+                </a>
+                <!-- Github Button -->
+                <a href="https://github.com/eswar2001" target="blank" class="social-margin">
+                    <div class="social-icon github">
+                        <i class="fa fa-github-alt" aria-hidden="true"></i>
+                    </div>
+                </a>
+                <!-- Youtube Button -->
+                <!-- <a href="http://youtube.com/" target="blank" class="social-margin">
+                    <div class="social-icon youtube">
+                        <i class="fa fa-youtube" aria-hidden="true"></i>
+                    </div>
+                </a> -->
+                <!-- Behance Button -->
+                <!-- <a href="https://behance.com/" target="blank" class="social-margin">
+                    <div class="social-icon behance">
+                        <i class="fa fa-behance" aria-hidden="true"></i>
+                    </div>
+                </a> -->
+                <!-- Soundcloud Button -->
+                <a href="https://www.instagram.com/eswar__abisheak/" target="blank" class="social-margin">
+                    <div class="social-icon instagram">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </div>
+                </a>
+                <!-- TwitterButton -->
+                <a href="http://www.hackthebox.eu/" target="blank" class="social-margin">
+                    <img src="https://www.hackthebox.eu/badge/image/185912" alt="Hack The Box" ;>
+                </a>
+            </div>
+            <!-- <ul class="social-media-list">
+                <li><a href="https://github.com/eswar2001" target="_blank" onclick="location.href='https://github.com/eswar2001';" class="contact-icon"> <i class="fa fa-github"
                             aria-hidden="true"></i></a></li>
                 <li><a href="https://in.linkedin.com/in/eswar-abisheak-14916017b" target="_blank" class="contact-icon">
                         <i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
@@ -227,7 +275,7 @@
                 <li><a href="https://www.facebook.com/eswar.abisheak/" target="_blank" class="contact-icon"> <i
                             class="fa fa-facebook" aria-hidden="true"></i></a></li> <img
                     src="https://www.hackthebox.eu/badge/image/185912" alt="Hack The Box" ;>
-            </ul>
+            </ul> -->
             <hr>
             <div class="container" style="padding-top: 1%;">
                 <p style=" color: whitesmoke; font-weight: bold; font-style: italic;"> “Alone, we can do so little;
