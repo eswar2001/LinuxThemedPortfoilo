@@ -11,6 +11,6 @@ $('document').ready(function () {
         $("#hmm").append(data);
 
         done = true;
-    }, 5000);
+    }, 4500);
 
 });
