@@ -1,6 +1,6 @@
 body,
 html {
-  cursor: url('https://img.icons8.com/windows/96/000000/lol.png'), auto;
+  cursor: url('icons/icons8-lol-30.png'), auto;
   height: 100%;
   width: 100%;
   -webkit-user-select: none;
@@ -12,7 +12,7 @@ html {
 }
 
 #education {
-  cursor: url('https://img.icons8.com/windows/96/000000/einstein.png'), auto;
+  cursor: url('icons/icons8-einstein-50.png'), auto;
 }
 
 #particle-canvas {
@@ -40,7 +40,7 @@ hr.new1 {
 }
 
 .profile {
-  cursor: url('https://img.icons8.com/windows/96/000000/person-male.png'), auto;
+  cursor: url('icons/icons8-person-30.png'), auto;
   background-color: cornsilk;
   background-attachment: fixed;
   background-position: center;
@@ -62,7 +62,7 @@ hr.new2 {
 }
 
 .projects {
-  cursor: url('https://img.icons8.com/windows/96/000000/working-with-a-laptop.png'), auto;
+  cursor: url('icons/icons8-relaxed-working-with-a-laptop-64.png'), auto;
   background-image: url('https://images.unsplash.com/photo-1544256718-3bcf237f3974?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80');
   background-attachment: fixed;
   background-position: center;
@@ -71,7 +71,7 @@ hr.new2 {
 }
 
 .Blog {
-  cursor: url('https://img.icons8.com/windows/96/000000/helping-hand.png'), auto;
+  cursor: url('icons/icons8-charity-64.png'), auto;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1508873699372-7aeab60b44ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
   background-attachment: fixed;
   background-position: center;
@@ -80,7 +80,7 @@ hr.new2 {
 }
 
 .contact {
-  cursor: url('https://img.icons8.com/windows/96/000000/headset.png'), auto;
+  cursor: url('icons/icons8-headset-50.png'), auto;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1508517911809-9fb266784e95?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1190&q=80');
   background-attachment: fixed;
   background-position: center;
