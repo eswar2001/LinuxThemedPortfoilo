@@ -2,6 +2,11 @@
 <html lang="en">
 
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="shortcut icon" href="icons/logo-via-logohub.png">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.css"
         integrity="sha256-2SjB4U+w1reKQrhbbJOiQFARkAXA5CGoyk559PJeG58=" crossorigin="anonymous" />
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
@@ -41,9 +46,6 @@
         document.onmousedown = mousehandler;
         document.onmouseup = mousehandler;
     </script>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="./home.scss">
     <link rel="stylesheet" href="./Home.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -117,7 +119,8 @@
                             .Course +
                             '</strong> <span class="hidden-phone">' + value.experience;
                         education +=
-                            '</br> </span> <span> <span> <img src="https://images.vexels.com/media/users/3/131261/isolated/preview/b2e48580147ca0ed3f970f30bf8bb009-map-location-marker-by-vexels.png" alt="Location" style="width: 15px;"> City of Destiny </span> </span></p>'
+                            '</br> </span> <span> <span> <img src="https://images.vexels.com/media/users/3/131261/isolated/preview/b2e48580147ca0ed3f970f30bf8bb009-map-location-marker-by-vexels.png" alt="Location" style="width: 15px;">' +
+                            value.locaton + '</span> </span></p>'
                         education += '</div></div> </br>';
                     });
                     $('#education').append(education);
@@ -144,7 +147,10 @@
     <div class="container-fluid" style="align-items: center;align-content:center;">
         <div class="row" style="text-align: center; padding: 5%;">
             <span class="col" style="align-items: center;">
-                <h2 style="padding:20%;"><strong>My Passion for CyberSecurity</strong></h2>
+                <h2 style="padding-left:20%;padding-right:20%;padding-top:20%;padding-bottom:10%;"><strong>My Passion
+                        for CyberSecurity</strong>
+                    <hr>
+                </h2>
                 <span>My interest in “Security” began at quite a young age, I guess as a relatively inquisitive and
                     perhaps suspicious person.I’ve decided that I can best serve the Cyber/InfoSec community by using
                     this passion and general interest in the industry to seek out professionals with transferable skills
@@ -155,7 +161,9 @@
                 </div>
             </span>
             <lottie-player class="col" src="https://assets9.lottiefiles.com/packages/lf20_B2qAl3/data.json"
-                background="transparent" speed="1" style="width: 100%; height: 100%;" loop autoplay></lottie-player>
+                background="transparent" speed="1" style="min-width: 400px; max-width: 700px; height: 100%;" loop
+                autoplay>
+            </lottie-player>
         </div>
     </div>
     <div class="container-fluid profile" style="align-items: center; text-align: center;">
@@ -194,7 +202,7 @@
         </div>
     </div>
     <section>
-        <div class="container-sm" id="education">
+        <div class="container-fluid" style="width: 100%; padding-left: 20%;padding-right: 20%;" id="education">
             <div class="profile-txt" style="padding: 5%;">
                 <h2><strong>Education</strong></h2>
                 <hr>
@@ -273,7 +281,7 @@
             </div>
         </div>
     </section>
-    <div class="Blog" style="height: 400px; z-index: 2;z-index: depth;">
+    <div class="Blog" style="min-height: 400px; max-height: fit-content; z-index: 2;z-index: depth;">
         <div class="container">
 
             <div class="row" style="text-align: center; padding: 5%;">

@@ -1,6 +1,7 @@
 body,
 html {
-  background-color: #66ccff;
+  /* background-color: #66ccff; */
+  background-color: honeydew;
   color: #f2f2f2;
   cursor: url('icons/icons8-lol-30.png'), auto;
   height: 100%;
@@ -9,7 +10,7 @@ html {
 
 #education {
   cursor: url('icons/icons8-einstein-50.png'), auto;
-  background-color: #66ccff;
+  background-color: lightblue;
   /* color: white; */
 
 }
@@ -72,7 +73,7 @@ hr.new2 {
 
 .Blog {
   cursor: url('icons/icons8-charity-64.png'), auto;
-  background-color: #f2f2f2;
+  background-color: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) #f2f2f2;
   /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1508873699372-7aeab60b44ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80'); */
   /* background-attachment: fixed;
   background-position: center;
