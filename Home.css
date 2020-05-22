@@ -2,7 +2,8 @@ body,
 html {
   /* background-color: #66ccff; */
   background-color: honeydew;
-  color: #f2f2f2;
+  /* color: #f2f2f2; */
+  color: black;
   cursor: url('icons/icons8-lol-30.png'), auto;
   height: 100%;
   width: 100%;
@@ -32,11 +33,11 @@ html {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #f2f2f2;
+  color: ivory;
 }
 
 hr.new1 {
-  border: 1px solid #f2f2f2;
+  border: 1px solid cornsilk;
 }
 
 .profile {
@@ -299,6 +300,10 @@ textarea {
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+hr {
+  border: 1px solid black;
+}
+
 .headline {
   text-align: center;
 }
@@ -555,11 +560,6 @@ textarea {
   color: #555;
   letter-spacing: 1px;
   text-align: center;
-}
-
-hr {
-  border-color: #f2f2f2;
-  ;
 }
 
 /* Begin Media Queries*/
