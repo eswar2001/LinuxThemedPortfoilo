@@ -155,6 +155,12 @@ hr.new2 {
     -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
 }
 
+.project:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25),
+    -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
+}
+
 .arrow {
   width: 0;
   height: 0;
@@ -644,4 +650,74 @@ hr {
   .send-button {
     width: 99%;
   }
+}
+
+
+.sect-gap {
+  float: left;
+  width: 100%;
+  padding: 100px 0px;
+  position: relative;
+  z-index: 99;
+}
+
+.project-list {
+  float: left;
+  width: 100%;
+  margin-bottom: -30px;
+  padding-top: 60px;
+}
+
+.project {
+  float: left;
+  width: 100%;
+  padding: 50px 0px;
+  background: #343333;
+  border-left: 2px solid #e65650;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.project i {
+  font-size: 60px;
+  color: #fff;
+}
+
+.project h3 {
+  padding-top: 20px;
+  float: left;
+  width: 100%;
+  text-align: center;
+  font: 700 30px "Lato";
+  color: #fffefe;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+}
+
+.project h3 span {
+  display: block;
+  padding-top: 10px;
+  font: 300 22px "Lato";
+  color: #fffefe;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+
+.title.red h3 {
+  float: left;
+  width: 100%;
+  letter-spacing: 2px;
+  color: black;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.title.red span {
+  text-align: center;
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+  color: black;
+  letter-spacing: 0.4px;
 }
