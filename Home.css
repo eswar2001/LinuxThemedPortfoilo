@@ -1,5 +1,7 @@
 body,
 html {
+  background-color: #66ccff;
+  color: #f2f2f2;
   cursor: url('icons/icons8-lol-30.png'), auto;
   height: 100%;
   width: 100%;
@@ -7,6 +9,9 @@ html {
 
 #education {
   cursor: url('icons/icons8-einstein-50.png'), auto;
+  background-color: #66ccff;
+  /* color: white; */
+
 }
 
 #particle-canvas {
@@ -26,16 +31,17 @@ html {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: cornsilk;
+  color: #f2f2f2;
 }
 
 hr.new1 {
-  border: 1px solid cornsilk;
+  border: 1px solid #f2f2f2;
 }
 
 .profile {
   cursor: url('icons/icons8-person-30.png'), auto;
-  background-color: cornsilk;
+  background-color: #f2f2f2;
+  /* #f2f2f2; */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -66,11 +72,12 @@ hr.new2 {
 
 .Blog {
   cursor: url('icons/icons8-charity-64.png'), auto;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1508873699372-7aeab60b44ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
-  background-attachment: fixed;
+  background-color: #f2f2f2;
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1508873699372-7aeab60b44ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80'); */
+  /* background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
 }
 
 .contact {
@@ -78,13 +85,13 @@ hr.new2 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1508517911809-9fb266784e95?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1190&q=80');
   background-attachment: fixed;
   background-position: center;
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
   background-size: cover;
 }
 
 .projects-text {
   text-align: center;
-  color: cornsilk;
+  color: #f2f2f2;
 }
 
 .card {
@@ -544,7 +551,7 @@ textarea {
 }
 
 hr {
-  border-color: rgba(255, 255, 255, .8);
+  border-color: #f2f2f2;
   ;
 }
 

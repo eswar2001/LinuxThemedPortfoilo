@@ -82,7 +82,7 @@
                         '<div  class=" row" style="text-align: center;align-content: space-around;">';
                     $.each(data["projects"], function (key, value) {
                         project +=
-                            '<div class="col"><div class=" card text-white" style="background-color: cornsilk; width: 18rem;height:330px;">' +
+                            '<div class="col"><div class=" card text-white z-depth-5" style="background-color: #f2f2f2; width: 18rem;height:330px;">' +
                             ' <a target="_blank" href="' + value.url + '">';
                         if (value.image != "NULL") {
                             project += '<img src="' + value.image +
@@ -172,36 +172,46 @@
                 enough.”</p> <br> — Mae West.
         </div>
     </div>
-
-    <div class="container-sm" id="education">
-        <div class="profile-txt" style="padding: 5%;">
-            <h2><strong>Education</strong></h2>
-            <hr>
+    <section>
+        <div class="container-sm" id="education">
+            <div class="profile-txt" style="padding: 5%;">
+                <h2><strong>Education</strong></h2>
+                <hr>
+            </div>
         </div>
-    </div>
+    </section>
     <div class="projects">
         <div class="projects-text" style="padding: 5%;">
             <h1 style="padding: 1%;"><strong>Projects</strong></h1>
-            <hr>
+            <hr style="color: #f2f2f2;">
             <h6> A showcase of design, <br> development and experiments</h6>
         </div>
         <div class="container" id="projects">
         </div>
     </div>
-    <div class="Blog">
-        <div class="container" style="height: 100%; color: blanchedalmond;">
-            <div class="row">
-                <div class="col"></div>
-                <div class="col" style="text-align: center;">
-                    <h2><strong>I can help.</strong></h2></br>
-                    <h3>I’m currently available for freelance work.</h3></br>
-                    <p>If you have a project that you want to get started, think you need my help with something or
+    <div class="Blog" style="height: 400px; z-index: 2;z-index: depth;">
+        <div class="container">
+            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+            <div class="row" style="text-align: center; padding: 5%;">
+                <lottie-player class="col" src="https://assets10.lottiefiles.com/packages/lf20_dq3B5q.json"
+                    background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay>
+                </lottie-player>
+                <span class="col">
+                    <h2><strong>I can help.</strong></h2>
+                    <hr></br>
+                    <!-- <h3>I’m currently available for freelance work.</h3></br> -->
+                    <p>If you have a project that you want to get started, </br>think you need my help with something
+                        or</br>
                         just fancy saying hey, then get in touch.</p>
-                    <p><a href="mailto:teswar2001@yahoo.co.in" class="button email-lnk" style="color: cornsilk;">message
+                    <p><a href="mailto:teswar2001@yahoo.co.in" class="button email-lnk">message
                             me <i class="email"></i></a></p>
-                </div>
-                <div class="col"></div>
+                </span>
+                <!-- <lottie-player class="col" src="https://assets1.lottiefiles.com/packages/lf20_P9ArQ8.json"
+                    background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay>
+                </lottie-player> -->
             </div>
+
+
         </div>
     </div>
     <div class="contact">
