@@ -31,73 +31,19 @@
             overflow: hidden;
         }
 
-
-        /* #loading {
-            background-color: #000000;
+        #loading {
+            background-color: #000;
             background: url('images/maker.gif') no-repeat center center;
             position: absolute;
             top: 0;
             left: 0;
             height: 100%;
             width: 100%;
-            box-shadow: black;
-        } */
-
-        pre {
-            padding: 0;
-            margin: 0;
-        }
-
-        .load {
-            margin: 0 auto;
-            min-height: 100%;
-            width: 100%;
-            background: black;
-        }
-
-        .term {
-            font-family: monospace;
-            color: #fff;
-            opacity: 0.8;
-            font-size: 2em;
-            overflow-y: auto;
-            overflow-x: hidden;
-            padding-top: 10px;
-            padding-left: 20px;
-        }
-
-        .term:after {
-            content: "_";
-            opacity: 1;
-            animation: cursor 1s infinite;
-        }
-
-        @keyframes cursor {
-            0% {
-                opacity: 0;
-            }
-
-            40% {
-                opacity: 0;
-            }
-
-            50% {
-                opacity: 1;
-            }
-
-            90% {
-                opacity: 1;
-            }
-
-            100% {
-                opacity: 0;
-            }
+            border: 2.0rem solid black;
         }
     </style>
-    <div class="load">
-        <pre class="term" style="margin:3%; font-size:smaller;"> eswar2001 @Kali: ~$ </pre>
+    <div id="loading">
     </div>
-
 </body>
 
 </html>
