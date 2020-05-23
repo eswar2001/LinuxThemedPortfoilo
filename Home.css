@@ -36,8 +36,48 @@ html {
   color: ivory;
 }
 
+.line-1 {
+  position: relative;
+  top: 50%;
+  width: inherit;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255, 255, 255, .75);
+  font-size: 180%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+}
+
+/* Animation */
+.anim-typewriter {
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+    blinkTextCursor 500ms steps(44) infinite normal;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 10em;
+  }
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, .75);
+  }
+
+  to {
+    border-right-color: transparent;
+  }
+}
+
 hr.new1 {
   border: 1px solid cornsilk;
+
 }
 
 .profile {
@@ -57,10 +97,12 @@ hr.new1 {
   padding-top: 1%;
   color: black;
   font-stretch: expanded;
+
 }
 
 hr.new2 {
   border: 1px solid black;
+
 }
 
 .projects {
@@ -94,6 +136,7 @@ hr.new2 {
 .projects-text {
   text-align: center;
   color: #f2f2f2;
+
 }
 
 .card {
@@ -106,19 +149,23 @@ hr.new2 {
 }
 
 .card>ul {
+
   text-align: center;
 }
 
 .card>ul>h5 {
+
   font-weight: bold;
 }
 
 .card>ul>h4 {
+
   font-weight: bolder;
 }
 
 .card>ul>span>h6 {
   display: inline-block;
+
 }
 
 .case-card {
@@ -302,6 +349,7 @@ textarea {
 
 hr {
   border: 1px solid black;
+
 }
 
 .headline {
@@ -311,6 +359,7 @@ hr {
 .headline h1 {
   font-size: 35px;
   font-family: Arial, Helvetica, sans-serif;
+
 }
 
 .social-buttons {
