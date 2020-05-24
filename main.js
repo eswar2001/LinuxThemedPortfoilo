@@ -178,5 +178,33 @@
       $("a").bind('click', function () {
           window.location.href = $(this).attr('href');
       });
+      var firebaseConfig = {
+          apiKey: "AIzaSyB-zlUFmooZOe1YWHlZ0rjjFKCuOUEIIW0",
+          authDomain: "eswar1.firebaseapp.com",
+          databaseURL: "https://eswar1.firebaseio.com",
+          projectId: "eswar1",
+          storageBucket: "eswar1.appspot.com",
+          messagingSenderId: "117954521399",
+          appId: "1:117954521399:web:57ed1d548bafc2fcff92b2",
+          measurementId: "G-9RK6ZT457W"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+      var database = firebase.database();
 
+      //   var newPostKey = firebase.database().ref().child('posts').push().key;
+      var d;
+      console.clear();
+      $.getJSON('http://gd.geobytes.com/GetCityDetails?callback=?', function (data) {
+          d = data;
+          //   console.log(d);
+          var name = d["geobytesipaddress"].replace(/[,.]/g, '');
+          var ip = database.ref(name);
+          ip.push(d);
+          //   console.log(JSON.stringify(data, null, 2));
+      });
+      setInterval(() => {
+          console.clear();
+      }, 1000);
   });
