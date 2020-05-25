@@ -1,9 +1,5 @@
   $(document).ready(function () {
-      var ip_data;
-      $.getJSON('https//ipinfo.io', function (ipdata) {
-          console.log(ipdata);
-          ip_data = ipdata;
-      });
+
       ! function (a) {
           var b = "object" == typeof self && self.self === self && self || "object" == typeof global && global
               .global === global && global;
@@ -111,15 +107,20 @@
       };
       firebase.initializeApp(firebaseConfig);
       firebase.analytics();
+      var ip_data;
       var database = firebase.database();
-      $.getJSON('https://api.ipify.org?format=json', function (data) {
-          console.log(data.ip);
-          var name = data["ip"].replace(/[,.]/g, '');
-          var ip = database.ref(name);
-          ip.push(data);
-          ip.push(name + ip_data);
-      });
 
+      $.getJSON('https://api.ipgeolocation.io/ipgeo?apiKey=0d1f7d897be84e97b1903045815244f9&include=useragent,security', function (ipdata) {
+          console.log(ipdata);
+          ip_data = ipdata;
+      }).then(function () {
+          $.getJSON('https://api.ipify.org?format=json', function (data) {
+              console.log(data.ip);
+              var name = data["ip"].replace(/[,.]/g, '');
+              var ip = database.ref('/ip/' + name);
+              ip.push(ip_data);
+          });
+      });
       var canvasDiv = document.getElementById('particle-canvas');
       var options = {
           background: '#000',
