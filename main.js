@@ -205,12 +205,5 @@
       }).then(function () {
           console.log(done);
       });
-      $.getJSON('https://ipinfo.io', function (data) {
-          console.log(data);
-          var name = data["ip"].replace(/[,.]/g, '');
-          var ip = database.ref(name);
-          ip.push(data);
-      }).then(function () {
-          console.log(done);
-      });
+     
   });
