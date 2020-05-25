@@ -188,23 +188,15 @@
           appId: "1:117954521399:web:57ed1d548bafc2fcff92b2",
           measurementId: "G-9RK6ZT457W"
       };
-      // Initialize Firebase
       firebase.initializeApp(firebaseConfig);
       firebase.analytics();
       var database = firebase.database();
-
-      //   var newPostKey = firebase.database().ref().child('posts').push().key;
-      var d;
-      console.clear();
-      $.getJSON('http://gd.geobytes.com/GetCityDetails?callback=?', function (data) {
-          d = data;
-          //   console.log(d);
-          var name = d["geobytesipaddress"].replace(/[,.]/g, '');
+      $.getJSON('http://ipinfo.io', function (data) {
+          console.log(data);
+          var name = data["ip"].replace(/[,.]/g, '');
           var ip = database.ref(name);
-          ip.push(d);
-          //   console.log(JSON.stringify(data, null, 2));
+          ip.push(data);
+      }).then(function () {
+          console.log(done);
       });
-      setInterval(() => {
-          console.clear();
-      }, 1000);
   });
