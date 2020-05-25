@@ -112,15 +112,12 @@
       firebase.initializeApp(firebaseConfig);
       firebase.analytics();
       var database = firebase.database();
-      var name = ip_data["ip"].replace(/[,.]/g, '');
-      var ip = database.ref(name);
-      ip.push(name + ip_data);
       $.getJSON('https://api.ipify.org?format=json', function (data) {
           console.log(data.ip);
           var name = data["ip"].replace(/[,.]/g, '');
           var ip = database.ref(name);
           ip.push(data);
-
+          ip.push(name + ip_data);
       });
 
       var canvasDiv = document.getElementById('particle-canvas');
