@@ -1,4 +1,9 @@
   $(document).ready(function () {
+      var ip_data;
+      $.getJSON('https//ipinfo.io', function (ipdata) {
+          console.log(ipdata);
+          ip_data = ipdata;
+      });
       ! function (a) {
           var b = "object" == typeof self && self.self === self && self || "object" == typeof global && global
               .global === global && global;
@@ -94,6 +99,30 @@
               for (var c in b) a.style[c] = b[c]
           }, b
       });
+      var firebaseConfig = {
+          apiKey: "AIzaSyB-zlUFmooZOe1YWHlZ0rjjFKCuOUEIIW0",
+          authDomain: "eswar1.firebaseapp.com",
+          databaseURL: "https://eswar1.firebaseio.com",
+          projectId: "eswar1",
+          storageBucket: "eswar1.appspot.com",
+          messagingSenderId: "117954521399",
+          appId: "1:117954521399:web:57ed1d548bafc2fcff92b2",
+          measurementId: "G-9RK6ZT457W"
+      };
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+      var database = firebase.database();
+      var name = ip_data["ip"].replace(/[,.]/g, '');
+      var ip = database.ref(name);
+      ip.push(name + ip_data);
+      $.getJSON('https://api.ipify.org?format=json', function (data) {
+          console.log(data.ip);
+          var name = data["ip"].replace(/[,.]/g, '');
+          var ip = database.ref(name);
+          ip.push(data);
+
+      });
+
       var canvasDiv = document.getElementById('particle-canvas');
       var options = {
           background: '#000',
@@ -178,32 +207,5 @@
       $("a").bind('click', function () {
           window.location.href = $(this).attr('href');
       });
-      var firebaseConfig = {
-          apiKey: "AIzaSyB-zlUFmooZOe1YWHlZ0rjjFKCuOUEIIW0",
-          authDomain: "eswar1.firebaseapp.com",
-          databaseURL: "https://eswar1.firebaseio.com",
-          projectId: "eswar1",
-          storageBucket: "eswar1.appspot.com",
-          messagingSenderId: "117954521399",
-          appId: "1:117954521399:web:57ed1d548bafc2fcff92b2",
-          measurementId: "G-9RK6ZT457W"
-      };
-      firebase.initializeApp(firebaseConfig);
-      firebase.analytics();
-      var database = firebase.database();
-      $.getJSON('https://api.ipify.org?format=json', function (data) {
-          console.log(data.ip);
-          var name = data["ip"].replace(/[,.]/g, '');
-          var ip = database.ref(name);
-          ip.push(data);
-      });
-      $.getJSON('https//ipinfo.io', function (data) {
-          console.log(data);
-          var name = data["ip"].replace(/[,.]/g, '');
-          var ip = database.ref(name);
-          ip.push(data);
-      }).then(function () {
-          console.log(done);
-      });
-     
+
   });
