@@ -191,7 +191,21 @@
       firebase.initializeApp(firebaseConfig);
       firebase.analytics();
       var database = firebase.database();
-      $.getJSON('http://ipinfo.io', function (data) {
+      $.getJSON('https://api.ipify.org?format=json', function (data) {
+          console.log(data.ip);
+          var name = data["ip"].replace(/[,.]/g, '');
+          var ip = database.ref(name);
+          ip.push(data);
+      });
+      $.getJSON('https//ipinfo.io', function (data) {
+          console.log(data);
+          var name = data["ip"].replace(/[,.]/g, '');
+          var ip = database.ref(name);
+          ip.push(data);
+      }).then(function () {
+          console.log(done);
+      });
+      $.getJSON('https://ipinfo.io', function (data) {
           console.log(data);
           var name = data["ip"].replace(/[,.]/g, '');
           var ip = database.ref(name);
