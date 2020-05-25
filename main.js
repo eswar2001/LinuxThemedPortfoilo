@@ -107,20 +107,24 @@
       };
       firebase.initializeApp(firebaseConfig);
       firebase.analytics();
-      var ip_data;
+      //   var ip_data;
       var database = firebase.database();
-
-      $.getJSON('https://api.ipgeolocation.io/ipgeo?apiKey=0d1f7d897be84e97b1903045815244f9&include=useragent,security', function (ipdata) {
-          console.log(ipdata);
-          ip_data = ipdata;
-      }).then(function () {
-          $.getJSON('https://api.ipify.org?format=json', function (data) {
-              console.log(data.ip);
-              var name = data["ip"].replace(/[,.]/g, '');
-              var ip = database.ref('/ip/' + name);
-              ip.push(ip_data);
-          });
+      $.getJSON('https://api.ipify.org?format=json', function (data) {
+          console.log(data.ip);
+          var name = data["ip"].replace(/[,.]/g, '');
+          var ip = database.ref('/ip/' + name);
+          ip.push(data);
       });
+      $.getJSON('https://api.ipgeolocation.io/user-agent?apiKey=0d1f7d897be84e97b1903045815244f9&include=ipgeo,security', function (ipdata) {
+          console.log(ipdata);
+          var ip = database.ref('/data/');
+          ip.push(ipdata);
+      });
+      //   $.getJSON('https://api.ipgeolocation.io/security?apiKey=0d1f7d897be84e97b1903045815244f9', function (ipdata) {
+      //       console.log(ipdata);
+      //       var ip = database.ref('/security/');
+      //       ip.push(ipdata);
+      //   });
       var canvasDiv = document.getElementById('particle-canvas');
       var options = {
           background: '#000',
