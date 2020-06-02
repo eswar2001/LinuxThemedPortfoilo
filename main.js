@@ -154,10 +154,11 @@
           } else {
               interval = 0;
           }
+
           $('#particle-canvas').css('background-image',
               'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(' + imgArray[
                   interval] + ')');
-      }, 5000);
+      }, 10000);
       $.getJSON(
           "Data.json",
           function (

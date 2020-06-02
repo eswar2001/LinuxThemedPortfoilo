@@ -32,6 +32,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 #particle-canvas {
+
     cursor: none;
     height: 100%;
     width: 100%;
@@ -39,7 +40,8 @@ body::-webkit-scrollbar-thumb {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover
+    background-size: cover;
+    transition: background-image 10.0s cubic-bezier(0.23, 1, 0.320, 1);
 }
 
 .hero-text {
