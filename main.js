@@ -95,18 +95,18 @@
               for (var c in b) a.style[c] = b[c]
           }, b
       });
-      var firebaseConfig = {
-          apiKey: "AIzaSyB-zlUFmooZOe1YWHlZ0rjjFKCuOUEIIW0",
-          authDomain: "eswar1.firebaseapp.com",
-          databaseURL: "https://eswar1.firebaseio.com",
-          projectId: "eswar1",
-          storageBucket: "eswar1.appspot.com",
-          messagingSenderId: "117954521399",
-          appId: "1:117954521399:web:57ed1d548bafc2fcff92b2",
-          measurementId: "G-9RK6ZT457W"
-      };
-      firebase.initializeApp(firebaseConfig);
-      firebase.analytics();
+      //   var firebaseConfig = {
+      //       apiKey: "AIzaSyB-zlUFmooZOe1YWHlZ0rjjFKCuOUEIIW0",
+      //       authDomain: "eswar1.firebaseapp.com",
+      //       databaseURL: "https://eswar1.firebaseio.com",
+      //       projectId: "eswar1",
+      //       storageBucket: "eswar1.appspot.com",
+      //       messagingSenderId: "117954521399",
+      //       appId: "1:117954521399:web:57ed1d548bafc2fcff92b2",
+      //       measurementId: "G-9RK6ZT457W"
+      //   };
+      //   firebase.initializeApp(firebaseConfig);
+      //   firebase.analytics();
       //   var ip_data;
       //   var database = firebase.database();
       //   $.getJSON('https://api.ipify.org?format=json', function (data) {
