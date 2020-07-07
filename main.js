@@ -198,19 +198,30 @@ $(document).ready(function () {
         "images/c10.png",
         "images/c11.png",
         "images/c12.png",
-        "images/c13.png", "images/c14.png", "images/c15.png", "images/c16.png",
+        "images/c13.png",
+        "images/c14.png",
+        "images/c15.png",
+        "images/c16.png",
+        "images/c17.png",
+        "images/c18.png",
+        "images/c19.png",
+        "images/c20.png",
+        "images/c21.png",
+        "images/c22.png",
+        "images/c23.png",
+        "images/c24.png",
+        "images/c25.png",
+        "images/c26.png",
+        "images/c27.png",
+        "images/c28.png",
     ];
-    $("#particle-canvas").css("background-image", "url(" + imgArray[0] + ")");
+    $("#particle-canvas").css("background-image", "url(" + imgArray[Math.floor(Math.random() * imgArray.length)] + ")");
 
     let interval = 0;
 
     setInterval(function () {
-        if (interval < imgArray.length - 1) {
-            interval++;
-        } else {
-            interval = 0;
-        }
-
+        interval = Math.floor(Math.random() * imgArray.length);
+        console.log(interval);
         $("#particle-canvas").css(
             "background-image",
             "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(" +
