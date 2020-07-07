@@ -35,12 +35,12 @@ body::-webkit-scrollbar-thumb {
     cursor: none;
     height: 100vh;
     width: 100vw;
-    background-color: #000;
+    background-color: black;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: radial-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1500215238115-1322078d92a3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
+    background-image: url('images/zane-lee-ZPjQh5N9pKw-unsplash.jpg');
 }
 
 .hero-text {

@@ -243,7 +243,8 @@ $(document).ready(function () {
     $("a").bind("click", function () {
         window.location.href = $(this).attr("href");
     });
-    var imgArray = [];
+    var imgArray = ['https://images.unsplash.com/photo-1500215238115-1322078d92a3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80'];
+
     imgArray.push("images/c1.png");
     imgArray.push("images/c2.png");
     imgArray.push("images/c3.png");
