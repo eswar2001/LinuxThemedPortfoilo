@@ -185,50 +185,6 @@ $(document).ready(function () {
         density: "high",
     };
     var particleCanvas = new ParticleNetwork(canvasDiv, options);
-    const imgArray = [
-        "images/c9.png",
-        "images/c1.png",
-        "images/c2.png",
-        "images/c3.png",
-        "images/c4.png",
-        "images/c5.png",
-        "images/c6.png",
-        "images/c7.png",
-        "images/c8.png",
-        "images/c10.png",
-        "images/c11.png",
-        "images/c12.png",
-        "images/c13.png",
-        "images/c14.png",
-        "images/c15.png",
-        "images/c16.png",
-        "images/c17.png",
-        "images/c18.png",
-        "images/c19.png",
-        "images/c20.png",
-        "images/c21.png",
-        "images/c22.png",
-        "images/c23.png",
-        "images/c24.png",
-        "images/c25.png",
-        "images/c26.png",
-        "images/c27.png",
-        "images/c28.png",
-    ];
-    $("#particle-canvas").css("background-image", "url(" + imgArray[Math.floor(Math.random() * imgArray.length)] + ")");
-
-    let interval = 0;
-
-    setInterval(function () {
-        interval = Math.floor(Math.random() * imgArray.length);
-        console.log(interval);
-        $("#particle-canvas").css(
-            "background-image",
-            "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(" +
-            imgArray[interval] +
-            ")"
-        );
-    }, 10000);
     $.getJSON("Data.json", function (data) {
         var project =
             '<div  class=" row" style="text-align: center;align-content: space-around;">';
@@ -287,4 +243,43 @@ $(document).ready(function () {
     $("a").bind("click", function () {
         window.location.href = $(this).attr("href");
     });
+    var imgArray = [];
+    imgArray.push("images/c1.png");
+    imgArray.push("images/c2.png");
+    imgArray.push("images/c3.png");
+    imgArray.push("images/c4.png");
+    imgArray.push("images/c5.png");
+    imgArray.push("images/c6.png");
+    imgArray.push("images/c7.png");
+    imgArray.push("images/c8.png");
+    imgArray.push("images/c9.png");
+    imgArray.push("images/c10.png");
+    imgArray.push("images/c11.png");
+    imgArray.push("images/c12.png");
+    imgArray.push("images/c13.png");
+    imgArray.push("images/c14.png");
+    imgArray.push("images/c15.png");
+    imgArray.push("images/c16.png");
+    imgArray.push("images/c17.png");
+    imgArray.push("images/c18.png");
+    imgArray.push("images/c19.png");
+    imgArray.push("images/c20.png");
+    imgArray.push("images/c21.png");
+    imgArray.push("images/c22.png");
+    imgArray.push("images/c23.png");
+    imgArray.push("images/c24.png");
+    imgArray.push("images/c25.png");
+    imgArray.push("images/c26.png");
+    imgArray.push("images/c27.png");
+    imgArray.push("images/c28.png");
+    setInterval(function () {
+        tmp = Math.floor(Math.random() * imgArray.length);
+        $("#particle-canvas").css(
+            "background-image",
+            "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(" +
+            imgArray[tmp] +
+            ")"
+        );
+        console.log(imgArray.length);
+    }, 10000);
 });
