@@ -177,41 +177,11 @@ $(document).ready(function () {
             b
         );
     });
-    //   var firebaseConfig = {
-    //       apiKey: "AIzaSyB-zlUFmooZOe1YWHlZ0rjjFKCuOUEIIW0",
-    //       authDomain: "eswar1.firebaseapp.com",
-    //       databaseURL: "https://eswar1.firebaseio.com",
-    //       projectId: "eswar1",
-    //       storageBucket: "eswar1.appspot.com",
-    //       messagingSenderId: "117954521399",
-    //       appId: "1:117954521399:web:57ed1d548bafc2fcff92b2",
-    //       measurementId: "G-9RK6ZT457W"
-    //   };
-    //   firebase.initializeApp(firebaseConfig);
-    //   firebase.analytics();
-    //   var ip_data;
-    //   var database = firebase.database();
-    //   $.getJSON('https://api.ipify.org?format=json', function (data) {
-    //       console.log(data.ip);
-    //       var name = data["ip"].replace(/[,.]/g, '');
-    //       var ip = database.ref('/ip/' + name);
-    //       ip.push(data);
-    //   });
-    //   $.getJSON('https://api.ipgeolocation.io/user-agent?apiKey=0d1f7d897be84e97b1903045815244f9&include=ipgeo,security', function (ipdata) {
-    //       console.log(ipdata);
-    //       var ip = database.ref('/data/');
-    //       ip.push(ipdata);
-    //   });
-    //   $.getJSON('https://api.ipgeolocation.io/security?apiKey=0d1f7d897be84e97b1903045815244f9', function (ipdata) {
-    //       console.log(ipdata);
-    //       var ip = database.ref('/security/');
-    //       ip.push(ipdata);
-    //   });
     var canvasDiv = document.getElementById("particle-canvas");
     var options = {
         background: "#000",
         interactive: true,
-        speed: "high",
+        speed: "low",
         density: "high",
     };
     var particleCanvas = new ParticleNetwork(canvasDiv, options);
@@ -228,7 +198,7 @@ $(document).ready(function () {
         "images/c10.png",
         "images/c11.png",
         "images/c12.png",
-        "images/c13.png",
+        "images/c13.png", "images/c14.png", "images/c15.png", "images/c16.png",
     ];
     $("#particle-canvas").css("background-image", "url(" + imgArray[0] + ")");
 
