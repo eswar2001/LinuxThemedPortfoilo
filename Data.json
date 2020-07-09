@@ -32,8 +32,8 @@
 
     }],
     "projects": [{
-        "image": "NULL",
-        "url": "https://bit.ly/eswar_dev",
+        "image": "./images/portfolio.jpg",
+        "url": "https://eswar.dev",
         "title": "Profile Website",
         "text": "About me"
     }, {
@@ -67,7 +67,7 @@
         "title": "State wise Covid-19",
         "text": " Live count on covid-19 cases in India."
     }, {
-        "url": "https://eswar2001.github.io/eswar.dev/pages/Know_more.html",
+        "url": "https://eswar2001.github.io/pages/Know_more.html",
         "image": "https://image.shutterstock.com/image-vector/programming-banner-coding-best-languages-600w-1033853617.jpg",
         "title": "Want to code?",
         "text": "All about Ide and code editing"
@@ -91,6 +91,26 @@
         "url": "https://drive.google.com/drive/folders/1BCD3bH-n98ojttbRENvkDJm80hhoxwmO?usp=sharing",
         "text": "An android app built in flutter to analize Stock's ,Just give it a try buddy",
         "title": "Stock Wishlist"
+    }, {
+        "image": "https://miro.medium.com/max/1366/1*iv_rDjCTOFjDZSfWp2b5VQ.jpeg",
+        "url": "https://medium.com/@eswarabisheak94/build-your-custom-kali-distro-e7d40fe68a39",
+        "text": "But we are HACKERS and hackers have black terminals with green font colors.",
+        "title": "Build your Custom Kali Distro"
+    }, {
+        "image": "https://miro.medium.com/max/440/1*aH7Kk2lS1_OXzA81scBiTw.png",
+        "url": "https://medium.com/@eswarabisheak94/setting-up-codeblocks-for-programming-windows-edition-72149eb8c0c0",
+        "text": "Hmm, Let’s get started!",
+        "title": "Setting Up CodeBlocks for Programming(Windows edition)"
+    }, {
+        "image": "https://miro.medium.com/max/277/1*OumlzqUhjn1d9leydgk3fA.png",
+        "url": "https://medium.com/@eswarabisheak94/boost-c-libraries-in-action-c5c73057ae35",
+        "text": "How to setup boost libraries for code:: blocks?",
+        "title": "Boost C++ Libraries in action"
+    }, {
+        "image": "https://miro.medium.com/max/700/1*rb3JJRN2YfybijTcxQiiUQ.png",
+        "url": "https://medium.com/@eswarabisheak94/setup-flutter-environment-bdffbf04f4c3",
+        "text": "Let’s Get mad!",
+        "title": "Setup Flutter Environment"
     }]
 
 
