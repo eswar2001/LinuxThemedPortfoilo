@@ -115,7 +115,7 @@ hr.new2 {
 }
 
 .projects {
-    cursor: url(icons/icons8-relaxed-working-with-a-laptop-64.png), auto;
+    /* cursor: url(icons/icons8-relaxed-working-with-a-laptop-64.png), auto; */
     background-image: url(images/projects.png);
     background-attachment: fixed;
     background-position: center;
