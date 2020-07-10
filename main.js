@@ -186,35 +186,14 @@ $(document).ready(function () {
     };
     var particleCanvas = new ParticleNetwork(canvasDiv, options);
     $.getJSON("Data.json", function (data) {
-        var project =
-            '<div  class=" row" style="text-align: center;align-content: space-around;">';
+        var project = '';
         $.each(data["projects"], function (key, value) {
-            project +=
-                '<div class="col"><div class=" card text-white z-depth-5" style="background-color: #f2f2f2; width: 18rem;height:330px;">' +
-                ' <a target="_blank" href="' +
-                value.url +
-                '">';
-            if (value.image != "NULL") {
-                project += '<img src="' + value.image + '"class="card-img"></a>';
-                project +=
-                    ' <div class="card-body" style="color: black; "> <h5 class="card-title">' +
-                    value.title +
-                    "</h5>";
-                project +=
-                    '<p class="card-text">' + value.text + "</p></div></div></div>";
-            } else {
-                project += "</a>";
-                project +=
-                    ' <div class="card-body" style="color: black; "> <h5 class="card-title"><a target="_blank" href="' +
-                    value.url +
-                    '">' +
-                    value.title +
-                    "</a></h5>";
-                project +=
-                    '<p class="card-text">' + value.text + "</p></div></div></div>";
-            }
+            project += '<div class="col-lg-4 col-md-6  portfolio-item filter-' + value.type + '"><div class="portfolio-wrap">';
+            project += '<img src="' + value.image + '" class="img-fluid" alt=""><div class="portfolio-info"><h4>' + value.title + '</h4>';
+            project += '<p>' + value.text + '</p><div class="portfolio-links"><a href="' + value.image + '" data-gall="portfolioGallery" class="venobox vbox-item" title="' + value.title + '"><i class=" bx bx-plus "></i></a>';
+            project += '<a target="_blank" href="' + value.url + '"><i class="fa fa-github" aria-hidden="true"></i></a>';
+            project += '</div></div></div></div>';
         });
-        project += "</div>";
         $("#projects").append(project);
         education = "";
         $.each(data["Education"], function (key, value) {
@@ -290,4 +269,33 @@ $(document).ready(function () {
         );
         console.log(imgArray.length);
     }, 10000);
+    $(window).on('load', function () {
+        var portfolioIsotope = $('.portfolio-container').isotope({
+            itemSelector: '.portfolio-item',
+            layoutMode: 'fitRows'
+        });
+
+        $('#portfolio-flters li').on('click', function () {
+            $("#portfolio-flters li").removeClass('filter-active');
+            $(this).addClass('filter-active');
+
+            portfolioIsotope.isotope({
+                filter: $(this).data('filter')
+            });
+        });
+
+    }); // Initiate venobox (lightbox feature used in portofilo)
+    $(document).ready(function () {
+        $('.venobox').venobox({
+            'share': false
+        });
+    });
+
+    // Portfolio details carousel
+    $(".portfolio-details-carousel").owlCarousel({
+        autoplay: true,
+        dots: true,
+        loop: true,
+        items: 1
+    });
 });

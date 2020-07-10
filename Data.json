@@ -35,83 +35,97 @@
         "image": "./images/portfolio.jpg",
         "url": "https://eswar.dev",
         "title": "Profile Website",
-        "text": "About me"
+        "text": "About me",
+        "type": "web"
     }, {
         "image": "./images/cseaiscrlin.JPG",
         "url": "https://cse.aiscrl.in",
         "title": "Department Website",
-        "text": "I worked as team member.It was a wondeful experience working with my team."
+        "text": "I worked as team member.It was a wondeful experience working with my team.",
+        "type": "web"
     }, {
         "image": "https://raw.githubusercontent.com/eswar2001/ProjectCovid/master/Capture.JPG",
         "url": "https://eswar2001.github.io/ProjectCovid/",
         "title": "ProjectCovid",
-        "text": "I built it using the webgl libraries provided by google chrome developers"
+        "text": "I built it using the webgl libraries provided by google chrome developers",
+        "type": "web"
     }, {
         "image": "./images/cptime.JPG",
         "url": "./pages/ctc.html",
         "title": "computational time",
-        "text": "Demonstration of time taken to compute nCr in different ways."
+        "text": "Demonstration of time taken to compute nCr in different ways.",
+        "type": "blog"
     }, {
         "image": "https://flutter.dev/images/flutter-logo-sharing.png",
         "url": "./resources/app-release.apk",
         "text": "An android app built in flutter that connets to our collage database",
-        "title": "CIS APP"
+        "title": "CIS APP",
+        "type": "app"
     }, {
-        "image": "NULL",
+        "image": "https://cnet1.cbsistatic.com/img/jqYrSeZiZmq_wms1mRfG9zuIoq0=/940x0/2019/06/26/3f76e99d-8055-46f3-8f27-558ee276b665/20180405-ibm-q-quantum-computer-02.jpg",
         "url": "./pages/quantum.html",
         "text": "A jist about quantum computing.",
-        "title": "All about quantum"
+        "title": "All about quantum",
+        "type": "blog"
     }, {
         "url": "https://eswar2001.github.io/covid-cnt",
         "image": "https://images.unsplash.com/photo-1584118624012-df056829fbd0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80L",
         "title": "State wise Covid-19",
-        "text": " Live count on covid-19 cases in India."
+        "text": " Live count on covid-19 cases in India.",
+        "type": "web"
     }, {
         "url": "https://eswar2001.github.io/pages/Know_more.html",
         "image": "https://image.shutterstock.com/image-vector/programming-banner-coding-best-languages-600w-1033853617.jpg",
         "title": "Want to code?",
-        "text": "All about Ide and code editing"
+        "text": "All about Ide and code editing",
+        "type": "blog"
     }, {
         "url": "https://github.com/eswar2001/Segregate_your_files-",
         "image": "https://banner2.cleanpng.com/20180905/fxs/kisspng-bash-shell-script-scripting-language-command-line-guaje-juaruipav-5b9092f6d69ad7.119365531536201462879.jpg",
         "text": "Works only with files in that folder and does not tamper subfolders",
-        "title": "Segregate your files in a folder"
+        "title": "Segregate your files in a folder",
+        "type": "bashscript"
     }, {
-        "image": "images/whatsapp.jpg",
+        "image": "data:image/jpeg;base64,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",
         "url": "https://github.com/eswar2001/Mass-whatsapp-msg-sender",
         "title": "Mass-whatsapp-msg-sender",
-        "text": "Want to send messages without saving phno and to multiple people"
+        "text": "Want to send messages without saving phno and to multiple people",
+        "type": "python"
     }, {
-        "image": "NULL",
+        "image": "data:image/jpeg;base64,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",
         "url": "https://eswar2001.github.io/shareBin/",
         "title": "ShareBin",
-        "text": "A bin to share code or text ,built using firebase"
+        "text": "A bin to share code or text ,built using firebase",
+        "type": "web"
     }, {
         "image": "https://flutter.dev/images/flutter-logo-sharing.png",
         "url": "https://drive.google.com/drive/folders/1BCD3bH-n98ojttbRENvkDJm80hhoxwmO?usp=sharing",
         "text": "An android app built in flutter to analize Stock's ,Just give it a try buddy",
-        "title": "Stock Wishlist"
+        "title": "Stock Wishlist",
+        "type": "app"
     }, {
         "image": "https://miro.medium.com/max/1366/1*iv_rDjCTOFjDZSfWp2b5VQ.jpeg",
         "url": "https://medium.com/@eswarabisheak94/build-your-custom-kali-distro-e7d40fe68a39",
         "text": "But we are HACKERS and hackers have black terminals with green font colors.",
-        "title": "Build your Custom Kali Distro"
+        "title": "Build your Custom Kali Distro",
+        "type": "blog"
     }, {
         "image": "https://miro.medium.com/max/440/1*aH7Kk2lS1_OXzA81scBiTw.png",
         "url": "https://medium.com/@eswarabisheak94/setting-up-codeblocks-for-programming-windows-edition-72149eb8c0c0",
         "text": "Hmm, Let’s get started!",
-        "title": "Setting Up CodeBlocks for Programming(Windows edition)"
+        "title": "Setting Up CodeBlocks for Programming(Windows edition)",
+        "type": "blog"
     }, {
-        "image": "https://miro.medium.com/max/277/1*OumlzqUhjn1d9leydgk3fA.png",
+        "image": "https://img.stackshare.io/service/4751/New_Project__59_.png",
         "url": "https://medium.com/@eswarabisheak94/boost-c-libraries-in-action-c5c73057ae35",
         "text": "How to setup boost libraries for code:: blocks?",
-        "title": "Boost C++ Libraries in action"
-    },{
+        "title": "Boost C++ Libraries in action",
+        "type": "blog"
+    }, {
         "image": "https://miro.medium.com/max/700/1*rb3JJRN2YfybijTcxQiiUQ.png",
         "url": "https://medium.com/@eswarabisheak94/setup-flutter-environment-bdffbf04f4c3",
         "text": "Let’s Get mad!",
-        "title": "Setup Flutter Environment"
+        "title": "Setup Flutter Environment",
+        "type": "blog"
     }]
-
-
 }
