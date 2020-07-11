@@ -211,7 +211,7 @@ $(document).ready(function () {
                 value.experience;
             education +=
                 '</br> </span> <span> <span> <img src="https://images.vexels.com/media/users/3/131261/isolated/preview/b2e48580147ca0ed3f970f30bf8bb009-map-location-marker-by-vexels.png" alt="Location" style="width: 15px;">' +
-                value.locaton +
+                value.location +
                 "</span> </span></p>";
             education += "</div></div> </br>";
         });
