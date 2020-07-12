@@ -268,5 +268,5 @@ $(document).ready(function () {
             ")"
         );
         console.log(imgArray.length);
-    }, 10000);
+    }, 20000);
 });
